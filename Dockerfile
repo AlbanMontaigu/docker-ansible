@@ -16,6 +16,9 @@ FROM alpine:3.5
 # Maintainer
 MAINTAINER alban.montaigu@gmail.com
 
+# Environment configuration
+ENV ANSIBLE_VERSION="2.2.1.0"
+
 # Installation receipe
 RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
     apk --update add sudo && \
@@ -33,7 +36,7 @@ RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
     \
     \
     echo "===> Installing Ansible..." && \
-    pip install ansible && \
+    pip install ansible=="${ANSIBLE_VERSION}" && \
     \
     \
     echo "===> Installing handy tools (not absolutely required)..." && \
