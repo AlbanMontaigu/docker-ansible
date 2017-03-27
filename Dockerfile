@@ -1,11 +1,13 @@
 
-# =======================================================================
+# ===================================================================================
 #
 # Ansible* commands with custom features like file inclusions.
 #
 # Based on William-Yeh/docker-ansible work (thanks !)
+#
 # @see https://github.com/William-Yeh/docker-ansible/blob/master/alpine3/Dockerfile
-# =======================================================================
+# @see https://docs.ansible.com/ansible/guide_cloudstack.html
+# ===================================================================================
 
 
 # Base image
