@@ -11,7 +11,7 @@
 
 # Test ansible version
 @test "Ansible version is ${ANSIBLE_VERSION}" {
-	result="$(docker run ${DOCKER_IMAGE_NAME} version)"
+	result="$(docker run ${DOCKER_IMAGE_NAME} ansible --version)"
 	[[ "$result" == *"ansible ${ANSIBLE_VERSION}"* ]]
 	echo "-$result-"
 }
