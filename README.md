@@ -6,7 +6,6 @@ My personal ansible version based on William-Yeh/docker-ansible work (thanks !)
 
 ## Usage
 
-
 Sample:
 
 ```bash
