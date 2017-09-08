@@ -13,11 +13,8 @@
 # Base image
 FROM alpine:3.5
 
-# Maintainer
-MAINTAINER alban.montaigu@gmail.com
-
 # Environment configuration
-ENV ANSIBLE_VERSION="2.2.1.0"
+ENV ANSIBLE_VERSION="2.3.2.0"
 
 # Installation receipe
 RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
