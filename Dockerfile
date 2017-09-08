@@ -9,7 +9,6 @@
 # @see https://docs.ansible.com/ansible/guide_cloudstack.html
 # ===================================================================================
 
-
 # Base image
 FROM alpine:3.6
 
