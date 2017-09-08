@@ -11,7 +11,7 @@
 
 
 # Base image
-FROM alpine:3.5
+FROM alpine:3.6
 
 # Environment configuration
 ENV ANSIBLE_VERSION="2.3.2.0"
