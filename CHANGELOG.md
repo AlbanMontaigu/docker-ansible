@@ -1,4 +1,7 @@
 
+## x (2017-10-13)
+- UPDATE: maintainer information added inside a `LABEL`
+
 ## 2.3.2.0 (2017-09-08)
 - UPDATE: update to ansible 2.3.2.0
 - UPDATE: deprecated MAINTAINER removed

@@ -12,6 +12,9 @@
 # Base image
 FROM alpine:3.6
 
+# Maintainer
+LABEL maintainer="alban.montaigu@gmail.com"
+
 # Environment configuration
 ENV ANSIBLE_VERSION="2.3.2.0"
 
