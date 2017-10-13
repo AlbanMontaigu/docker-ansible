@@ -19,41 +19,13 @@ LABEL maintainer="alban.montaigu@gmail.com"
 ENV ANSIBLE_VERSION="2.4.0.0"
 
 # Installation receipe
-RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
-    apk --no-cache add sudo && \
-    \
-    \
-    echo "===> Adding Python runtime..."  && \
-    apk --update add python py-pip openssl ca-certificates && \
-    apk --update add --virtual build-dependencies \
-                python-dev libffi-dev openssl-dev build-base && \
-    pip install --upgrade pip cffi && \
-    \
-    \
-    echo "===> Installing cloudstak API pyton client" && \
-    pip install cs && \
-    \
-    \
-    echo "===> Installing Ansible..." && \
-    pip install ansible=="${ANSIBLE_VERSION}" && \
-    \
-    \
-    echo "===> Installing handy tools (not absolutely required)..." && \
-    apk --update add sshpass openssh-client rsync && \
-    \
-    \
-    echo "===> Removing package list..." && \
-    apk del build-dependencies && \
-    rm -rf /var/cache/apk/* && \
-    \
-    \
-    echo "===> Adding ansible hosts for convenience..." && \
-    mkdir -p /etc/ansible && \
-    echo 'localhost' > /etc/ansible/hosts && \
-    \
-    \
-    echo "===> Modifying ansible configuration to enable outdated / self signed SSL..." && \
-    sed -i -e "s|verify=True, cert=None|verify=False, cert=None|g" /usr/lib/python2.7/site-packages/cs.py
+RUN apk --no-cache add sudo python py-pip openssl ca-certificates sshpass openssh-client rsync \
+    && apk --no-cache add --virtual build-dependencies python-dev libffi-dev openssl-dev build-base \
+    && pip install --upgrade pip cffi cs ansible=="${ANSIBLE_VERSION}" \
+    && apk del build-dependencies \
+    && mkdir -p /etc/ansible \
+    && echo 'localhost' > /etc/ansible/hosts \
+    && sed -i -e "s|verify=True, cert=None|verify=False, cert=None|g" /usr/lib/python2.7/site-packages/cs.py
 
 # default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]
