@@ -24,8 +24,17 @@ RUN apk --no-cache add sudo python py-pip openssl ca-certificates sshpass openss
     && pip install --upgrade pip cffi cs ansible=="${ANSIBLE_VERSION}" \
     && apk del build-dependencies \
     && mkdir -p /etc/ansible \
-    && echo 'localhost' > /etc/ansible/hosts \
-    && sed -i -e "s|verify=True, cert=None|verify=False, cert=None|g" /usr/lib/python2.7/site-packages/cs.py
+    && echo 'localhost' > /etc/ansible/hosts
 
-# default command: display Ansible version
+# Volumes and workdir configuration
+VOLUME ["/data"]
+WORKDIR /data
+
+# Entrypoint to enable live customization
+COPY docker-entrypoint.sh /docker-entrypoint.sh
+
+# Main command
+ENTRYPOINT ["/docker-entrypoint.sh"]
+
+# Default command: display Ansible version
 CMD [ "ansible-playbook", "--version" ]

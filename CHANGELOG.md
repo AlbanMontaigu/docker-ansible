@@ -3,6 +3,7 @@
 - UPDATE: maintainer information added inside a `LABEL`
 - UPDATE: update to ansible 2.4.0.0
 - UPDATE: more simple Dockerfile
+- FEATURE: now cert verif for cloudstack can be set off only if env var `CS_CERT` is set to `NO_VERIF`
 
 ## 2.3.2.0 (2017-09-08)
 - UPDATE: update to ansible 2.3.2.0
