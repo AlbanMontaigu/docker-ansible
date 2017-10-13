@@ -16,7 +16,7 @@ FROM alpine:3.6
 LABEL maintainer="alban.montaigu@gmail.com"
 
 # Environment configuration
-ENV ANSIBLE_VERSION="2.3.2.0"
+ENV ANSIBLE_VERSION="2.4.0.0"
 
 # Installation receipe
 RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
