@@ -20,7 +20,7 @@ ENV ANSIBLE_VERSION="2.4.0.0"
 
 # Installation receipe
 RUN echo "===> Installing sudo to emulate normal OS behavior..." && \
-    apk --update add sudo && \
+    apk --no-cache add sudo && \
     \
     \
     echo "===> Adding Python runtime..."  && \
