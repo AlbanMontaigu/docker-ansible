@@ -1,4 +1,7 @@
 
+## 2.4.3.0 (2018-02-12)
+- UPDATE: update to ansible 2.4.3.0
+
 ## 2.4.0.0 (2017-10-13)
 - UPDATE: maintainer information added inside a `LABEL`
 - UPDATE: update to ansible 2.4.0.0
