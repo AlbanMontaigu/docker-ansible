@@ -2,6 +2,7 @@
 ## 2.4.3.0 (2018-02-12)
 - UPDATE: update to ansible 2.4.3.0
 - UPDATE: update docker build to 17.12.0-ce
+- UPDATE: update to alpine 3.7
 
 ## 2.4.0.0 (2017-10-13)
 - UPDATE: maintainer information added inside a `LABEL`
