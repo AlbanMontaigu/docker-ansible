@@ -1,4 +1,7 @@
 
+## 2.5.0 (2018-03-30)
+- UPDATE: bump to ansible 2.5.0
+
 ## 2.4.3.0 (2018-02-12)
 - UPDATE: update to ansible 2.4.3.0
 - UPDATE: update docker build to 17.12.0-ce

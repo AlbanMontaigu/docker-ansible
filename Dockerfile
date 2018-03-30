@@ -16,7 +16,7 @@ FROM alpine:3.7
 LABEL maintainer="alban.montaigu@gmail.com"
 
 # Environment configuration
-ENV ANSIBLE_VERSION="2.4.3.0"
+ENV ANSIBLE_VERSION="2.5.0"
 
 # Installation receipe
 RUN apk --no-cache add sudo python py-pip openssl ca-certificates sshpass openssh-client rsync \
