@@ -1,4 +1,7 @@
 
+## 2.5.2 (2018-05-08)
+- UPDATE: pip netaddr added to make ansible kubespray working
+
 ## 2.5.2 (2018-05-01)
 - UPDATE: bump to ansible 2.5.2
 - UPDATE: bump docker build to 18.03.1-ce
