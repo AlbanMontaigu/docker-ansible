@@ -1,6 +1,7 @@
 
 ## 2.6.2 (2018-10-07)
 - BUGFIX: ANSIBLE_CONFIG env var added to avoid "world writable directory" issue
+- BUGFIX: Separate pip upgrade to avoid version issue
 
 ## 2.6.2 (2018-05-01)
 - UPDATE: bump to ansible 2.6.2
