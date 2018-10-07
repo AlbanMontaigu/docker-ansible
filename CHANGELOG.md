@@ -1,5 +1,8 @@
 
-## 2.-.2 (2018-05-01)
+## 2.6.2 (2018-10-07)
+- BUGFIX: ANSIBLE_CONFIG env var added to avoid "world writable directory" issue
+
+## 2.6.2 (2018-05-01)
 - UPDATE: bump to ansible 2.6.2
 - UPDATE: bump docker build to 18.06.0-ce
 - UPDATE: bump to alpine 3.8

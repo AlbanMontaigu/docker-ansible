@@ -17,6 +17,7 @@ LABEL maintainer="alban.montaigu@gmail.com"
 
 # Environment configuration
 ENV ANSIBLE_VERSION="2.6.2"
+    ANSIBLE_CONFIG="/data/ansible.cfg"
 
 # Installation receipe
 RUN apk --no-cache add sudo python py-pip openssl ca-certificates sshpass openssh-client rsync \
