@@ -16,7 +16,7 @@ FROM alpine:3.8
 LABEL maintainer="alban.montaigu@gmail.com"
 
 # Environment configuration
-ENV ANSIBLE_VERSION="2.6.2"
+ENV ANSIBLE_VERSION="2.6.2" \
     ANSIBLE_CONFIG="/data/ansible.cfg"
 
 # Installation receipe
