@@ -1,5 +1,5 @@
 
-## 2.6.2 (2018-10-24)
+## 2.7.0 (2018-10-24)
 - UPDATE: bump to ansible 2.7.0
 - UPDATE: bump docker build to 18.06.1-ce
 
